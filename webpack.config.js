@@ -44,13 +44,15 @@ module.exports = {
     port: 3000,
     publicPath: "http://localhost:3000/",
 		hot: false,
-		// https: true
   },
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, "src/index.html"),
 			filename: path.join(__dirname, "dist/index.html"),
+			inject: false,
 		}),
-		new webpack.HotModuleReplacementPlugin(),
+		new webpack.HotModuleReplacementPlugin({
+			hot: false
+		}),
 	],
 };
