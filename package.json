@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --watch --mode development --config=./webpack.config.js",
-    "build:dev": "webpack --mode development --config=./webpack.config.js"
+		"build:dev": "webpack --mode development --config=./webpack.config.js",
+		"build": "webpack --mode production --config=./webpack.config.js"
   },
   "user-agent": "Grindr3/5.9.1.201806042349 (201806042349; iPhone; iOS 11.4.1)",
   "author": "lopis",
